@@ -1,0 +1,19 @@
+Source: unity-lens-vpn
+Section: gnome
+Priority: extra
+Build-Depends: debhelper (>= 8),
+ python (>= 2.6.6-3~),
+ python-distutils-extra (>= 2.10)
+Maintainer: Michael Wild <themiwi@users.sourceforge.net>
+Standards-Version: 3.9.3
+X-Python-Version: >= 2.6
+
+Package: unity-lens-vpn
+Architecture: all
+Depends: ${misc:Depends},
+ ${python:Depends},
+ python-unity-singlet,
+ python-dbus
+Description: Unity VPN lens
+ This package contains a Unity lens which can be used to search and launch VPN
+ connections from the Dash.
