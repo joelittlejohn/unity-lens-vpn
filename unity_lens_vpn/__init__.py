@@ -51,6 +51,10 @@ class VpnLens(SingleScopeLens):
     _SETTINGS_PATH = _NM_PATH + '/Settings'
     _BUS = dbus.SystemBus()
 
+    def __init__(self):
+        SingleScopeLens.__init__(self)
+        self._lens.props.search_in_global = True
+
     def search(self, search, results):
         settings = self._BUS.get_object(self._BUS_ID, self._SETTINGS_PATH)
         for c in settings.ListConnections():
