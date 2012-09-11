@@ -15,7 +15,7 @@ However, it is likely that you are using Ubuntu, so it is better to build the
 package and install it properly. Check out the `ubuntu/precise` branch, build
 the package and install it:
 
-    $ git checkout ubuntu/precise
+    $ git checkout ubuntu/dev
     $ debuild -I
     $ dpkg -i ../unity-lens-vpn*.deb
 
