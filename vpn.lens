@@ -1,0 +1,10 @@
+[Lens]
+DBusName=unity.singlet.lens.vpn
+DBusPath=/unity/singlet/lens/vpn
+Name=VPN
+Icon=network-vpn-symbolic
+Description=VPN Lens
+SearchHint=Search VPN
+
+[Desktop Entry]
+X-Ubuntu-Gettext-Domain=unity-lens-vpn

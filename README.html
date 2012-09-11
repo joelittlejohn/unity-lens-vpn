@@ -1,0 +1,30 @@
+<html>
+<head>
+</head>
+<body>
+<h1>Unity VPN Lens</h1>
+
+<p>This package provides a lens for the Ubuntu Unity Dash that searches and
+launches VPN connections defined in the NetworkManager.</p>
+
+<h2>Installation</h2>
+
+<p>Simply run</p>
+
+<pre><code>$ python setup.py install
+</code></pre>
+
+<p>However, it is likely that you are using Ubuntu, so it is better to build the
+package and install it properly. Check out the <code>ubuntu/precise</code> branch, build
+the package and install it:</p>
+
+<pre><code>$ git checkout ubuntu/dev
+$ debuild
+$ dpkg -i ../unity-lens-vpn*.deb
+</code></pre>
+
+<p>You'll need to have the <a href="http://apt.ubuntu.com/p/devscripts"><code>devscripts</code></a> and
+<a href="http://apt.ubuntu.com/p/python-distutils-extra"><code>python-distutils-extra</code></a>
+packages installed.</p>
+</body>
+</html>
