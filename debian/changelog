@@ -1,5 +1,6 @@
-unity-lens-vpn (0.1) precise; urgency=low
+unity-lens-vpn (0.1-1ubuntu1~themiwi1) precise; urgency=low
 
+  * [f0fcb51] Initial debian packaging
   * Initial release.
 
- -- Michael Wild <themiwi@users.sourceforge.net>  Mon, 10 Sep 2012 15:40:03 +0200
+ -- Michael Wild <themiwi@users.sourceforge.net>  Tue, 11 Sep 2012 14:51:06 +0200
