@@ -104,13 +104,20 @@ git archive --format=tar --prefix=unity-lens-vpn-$VERSION/ v$VERSION > \
 
 # create HTML README
 echo "Creating HTML docs and adding them to the tar-ball"
+if git rev-parse --verify --quiet v$VERSION:README.md >/dev/null; then
+  README=README.md
+else
+  README=README
+fi
 mkdir $TMP/unity-lens-vpn-$VERSION
 cat > $TMP/unity-lens-vpn-$VERSION/README.html << EOF
 <html>
 <head>
+<title>Unity Lens for VPN Connections</title>
 </head>
 <body>
-$(git show v$VERSION -- README | markdown README || die "Markdown failed")
+$(git show v$VERSION:$README | markdown || \
+  die "Getting $VERSION:$README or markdown failed")
 </body>
 </html>
 EOF
