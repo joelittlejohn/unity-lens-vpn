@@ -1,5 +1,13 @@
-unity-lens-vpn (0.1) precise; urgency=low
+unity-lens-vpn (0.1-0dev1) precise; urgency=low
 
   * Initial release.
+  * [2f466ae] Update README.md for new ubuntu/dev branch
+  * [84f59fd] Renamed README.md to README
+  * [2758726] Added script to generate the dist package
+  * [d4e7d5e] Remove -I debuild option from README
+  * [034665a] Renamed README{,.md} for github
+  * [e0fba54] Fix README.html generation, update for README.md
+  * [73e8231] Picked d/s/local-options, d/s/format and d/gbp.conf.
+    From ubuntu/precise at f0fcb518d84111c1a143e42af61b8b0c8bb9ca4c.
 
- -- Michael Wild <themiwi@users.sourceforge.net>  Mon, 10 Sep 2012 15:40:03 +0200
+ -- Michael Wild <themiwi@users.sourceforge.net>  Wed, 12 Sep 2012 14:39:50 +0200
