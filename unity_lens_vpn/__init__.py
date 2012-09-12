@@ -55,6 +55,10 @@ class VpnLens(SingleScopeLens):
         SingleScopeLens.__init__(self)
         self._lens.props.search_in_global = True
 
+    def global_search(self, search, results):
+        if len(search):
+            self.search(search, results)
+
     def search(self, search, results):
         settings = self._BUS.get_object(self._BUS_ID, self._SETTINGS_PATH)
         for c in settings.ListConnections():
