@@ -1,3 +1,9 @@
+unity-lens-vpn (0.2-0dev1) precise; urgency=low
+
+  * [fbb80c6] Only list VPN's in global search if non-empty search term
+
+ -- Michael Wild <themiwi@users.sourceforge.net>  Wed, 12 Sep 2012 22:49:42 +0200
+
 unity-lens-vpn (0.1-0dev1) precise; urgency=low
 
   * Initial release.
