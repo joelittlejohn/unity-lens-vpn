@@ -1,3 +1,9 @@
+unity-lens-vpn (0.2-1ubuntu1~themiwi1) precise; urgency=low
+
+  * [e5d5cf1] New upstream version 0.2
+
+ -- Michael Wild <themiwi@users.sourceforge.net>  Wed, 12 Sep 2012 22:51:45 +0200
+
 unity-lens-vpn (0.1-1ubuntu1~themiwi1) precise; urgency=low
 
   * [f0fcb51] Initial debian packaging
